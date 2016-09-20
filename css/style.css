@@ -1,0 +1,155 @@
+header,
+nav,
+article,
+section,
+footer {
+	display: block;
+}
+
+body {
+	font: small Helvetica, Arial, sans-serif;
+	background: url(../assets/background.jpg);
+	margin: 10px;
+	}
+
+body, h1, h2, dl, dt, dd, input, form, fieldset, label, a:link, a:hover {
+	padding: 5px 10px;
+	margin: 0
+}
+
+a:visited {
+	color: #000000;
+}
+
+p {
+	margin: 0 0 1.7em 0; 
+	line-height: 1.7em
+	}
+
+div#container {
+	width: 960px;
+	margin: 20px auto; /*margins here of 20 brings down page a little in browser */
+	background-color: #FF9E9D;
+	-moz-border-radius: 6px 6px 6px 6px;  /*This does the rounded corners and it's also coding that makes Firefox read HTML5 code*/
+	-webkit-border-radius: 6px 6px 6px 6px;
+	border-radius: 6px 6px 6px 6px;
+	-moz-box-shadow: 0px 0px 25px rgba(0,0,0,0.50); 
+	-webkit-box-shadow: 0px 0px 25px rgba(0,0,0,0.50);
+	box-shadow: 0px 0px 25px rgba(0,0,0,0.50);
+}
+
+header {
+	padding: 10px;
+	-moz-border-radius: 6px 6px 0px 0px;  /*This does the rounded corners and it's also coding that makes Firefox read HTML5 code*/
+	-webkit-border-radius: 6px 6px 0px 0px;
+	border-radius: 6px 6px 0px 0px;
+	background: -moz-linear-gradient(left, #181848 24%, #304878 80%, #7890A8 100%); /*Coding for the gradient that goes from left to right. This doesn't work in IE*/
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(24%,#181848), color-stop(80%,#304878), color-stop(100%,#7890A8));
+	background: -webkit-linear-gradient(left,  #181848 24%,#304878 80%,#7890A8 100%);
+	background: linear-gradient(left, #181848 24%,#304878 80%,#7890A8 100%);
+}
+
+header h1 {
+	color: #FFFF99;
+	padding: 25px 20px;
+	font-size: 2.2em;
+}
+
+nav {
+	background: #F0A818;
+	padding: 3px;
+	overflow: hidden;
+}
+
+nav a:link:visited {
+	float: left;
+	color: #ffffff;	
+	text-decoration: none;
+	padding: 5px;
+}
+
+button:hover {
+	background: -moz-linear-gradient(bottom, #72B6CC 10%, #196CE8 70%);
+	background: -webkit-gradient(linear, bottom left, bottom right, color-stop(10%,#72B6CC), color-stop(70%,#196CE8));
+	background: -webkit-linear-gradient(bottom, #72B6CC 10%, #196CE8 70%);
+	background: linear-gradient(bottom, #72B6CC 10%, #196CE8 70%);
+}
+
+button {
+	margin: 4px;
+	padding: 3px;
+	color: #ffffff; 
+	font-weight: bold;
+	font-size: 1.1em;
+	text-shadow: 2px 1px 3px black; /*Adds a text shadow to the link when you hover over it*/
+	/*First two values refer to the angle and distance from the text, thrid value is the spread*/
+	background: #FAC882;
+  /*background: #FDF992;*/
+}
+
+article {
+	width: 615px;
+	float: left;
+	padding: 10px;
+}
+
+figure {
+	border: 1px solid #DDDDDD;
+	float: left;
+}
+
+figcaption {
+	text-align: center;
+	font-style: italic;
+}
+
+article h2 {
+	color: #1f4e6b;
+	padding: 10px;
+	font-size: 150%;
+	margin: 0 0 6px 0;
+}
+
+#article2 {
+	width: 305px;
+	float: left;
+	background-color: #7890A8;
+	color: #516875;
+	padding: 10px;
+	overflow: auto;
+}
+
+#article2 img {
+	width: 300px;
+}
+
+#article2 p {
+	color: #ffffff;
+}
+
+#article2 h3 {
+	color: #FFFFFF;
+	font-size: 1.4em;
+	margin: 10px 0 6px 0;
+	}
+
+footer {
+	clear: both;
+	color: #5b5b5b;
+	padding: 15px 0px;
+	clear: both;
+	-moz-border-radius: 0px 0px 6px 6px;
+	-webkit-border-radius: 0px 0px 6px 6px;
+	border-radius: 0px 0px 6px 6px;
+	background: -moz-linear-gradient(right, #181848 24%, #304878 80%, #7890A8 100%); /*Coding for the gradient that goes from right to left. This doesn't work in IE*/
+	background: -webkit-gradient(linear, right top, left bottom, color-stop(24%,#181848), color-stop(80%,#304878), color-stop(100%,#7890A8));
+	background: -webkit-linear-gradient(right,  #181848 24%,#304878 80%,#7890A8 100%);
+	background: linear-gradient(right, #181848 24%,#304878 80%,#7890A8 100%);
+}
+
+footer p {
+	text-align: center;
+	font-size: 1.1em;
+	color: #FFFF99;
+	margin: 0;
+}
